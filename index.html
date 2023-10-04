@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex align-items</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+        .container {
+            border: 1px solid darkorange;
+            background: orange;
+            display: flex;
+            height: 120px;
+        }
+        .inner {
+            border: 1px solid red;
+            background: green;
+            width: 70px;
+            height: 70px;
+            margin: 5px;
+            text-align: center;
+            line-height: 70px;
+        }
+        .normal {
+            align-items: normal; /* default */
+        }
+        .flex-end {
+            align-items: flex-end;
+        }
+        .center {
+            align-items: center;
+        }
+        .flex-start {
+            align-items: flex-start;
+        }
+        .h100px {
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex align-items</h1>
+    <div class="container normal">
+        <div class="inner">1</div>
+        <div class="inner h100px">2</div>
+        <div class="inner">3</div>
+        <div class="inner">4</div>
+        <div class="inner">5</div>
+        <div class="inner">6</div>
+    </div>
+    <br>
+    <div class="container flex-end">
+        <div class="inner">1</div>
+        <div class="inner h100px">2</div>
+        <div class="inner">3</div>
+        <div class="inner">4</div>
+        <div class="inner">5</div>
+        <div class="inner">6</div>
+    </div>
+    <br>
+    <div class="container center">
+        <div class="inner">1</div>
+        <div class="inner h100px">2</div>
+        <div class="inner">3</div>
+        <div class="inner">4</div>
+        <div class="inner">5</div>
+        <div class="inner">6</div>
+    </div>
+    <br>
+    <div class="container flex-start">
+        <div class="inner">1</div>
+        <div class="inner h100px">2</div>
+        <div class="inner">3</div>
+        <div class="inner">4</div>
+        <div class="inner">5</div>
+        <div class="inner">6</div>
+    </div>
+</body>
+</html>
